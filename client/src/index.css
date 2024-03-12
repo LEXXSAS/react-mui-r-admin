@@ -1,0 +1,216 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-magenta: darkmagenta;
+  --color-text-field-and-label: #9C27B0;
+}
+
+#root {
+  display: grid;
+}
+
+body {
+  margin: 0 auto;
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.selectbox {
+  display: flex;
+  align-items: center;
+}
+
+.css-1lb8v27-MuiPagination-root {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.css-1hof3tc {
+  color: var(--color-magenta) !important;
+}
+
+input {
+  color: var(--color-magenta) !important;
+}
+fieldset {
+  border-color: var(--color-text-field-and-label) !important;
+}
+label {
+  color: var(--color-text-field-and-label) !important;
+}
+
+.css-1gngpax {
+  padding: 0 !important;
+}
+.css-dv0mq-MuiTableCell-root {
+  padding: 6px 6px !important;
+  padding-right: 16px !important;
+}
+
+.css-1tesp3k {
+  display: grid;
+  background-color: rgb(255, 255, 255);
+  color: rgba(0, 0, 0, 0.87);
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 1px -1px, rgba(0, 0, 0, 0.14) 0px 1px 1px 0px, rgba(0, 0, 0, 0.12) 0px 1px 3px 0px;
+  overflow: hidden;
+  grid-template-columns: repeat(1,minmax(360px,1fr));
+}
+
+.css-vubbuv {
+  margin-right: 0.3rem !important;
+  user-select: none;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  fill: currentcolor;
+  flex-shrink: 0;
+  transition: fill 
+}
+
+.css-1mzerio {
+  display: block !important;
+}
+
+.css-vubbuv {
+  user-select: none;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  margin: 0 !important;
+  fill: currentcolor;
+  padding: 0;
+  flex-shrink: 0;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  font-size: 1.5rem;
+}
+
+.css-nzinn5-MuiContainer-root {
+  max-width: 444px;
+  display: grid !important;
+  justify-items: center !important;
+}
+.css-khmcr8 {
+  padding: 0 !important;
+}
+
+.css-niqf4j-MuiStack-root {
+  justify-content: end;
+}
+
+/* Loader two */
+.loader-two {
+  color: #1976d2;
+  position: relative;
+  display: inline-block;
+  margin-top: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 48px;
+  letter-spacing: 4px;
+  box-sizing: border-box;
+}
+.loader-two::before {
+  content: '';  
+  position: absolute;
+  right: 70px;
+  bottom: 10px;
+  height: 28px;
+  width: 5.15px;
+  background: currentColor;
+  box-sizing: border-box;
+  animation: animloader1 1s linear infinite alternate;
+}
+.loader-two::after {
+  content: '';  
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 125px;
+  top: 2px;
+  border-radius: 50%;
+  background: #1976d2;
+  box-sizing: border-box;
+  animation: animloader 1s linear infinite alternate;
+}
+
+.css-dpjnhs-MuiInputBase-root-MuiOutlinedInput-root {
+  color: darkmagenta !important;
+}
+
+.css-1e6y48t-MuiButtonBase-root-MuiButton-root {
+  min-width: 0 !important;
+  padding: 0 !important;
+}
+
+@keyframes animloader {
+  0% {
+    transform: translate(0px, 0px) scaleX(1);
+  }
+  14% {
+    transform: translate(-12px, -16px) scaleX(1.05);
+  }
+  28% {
+    transform: translate(-27px, -28px) scaleX(1.07);
+  }
+  42% {
+    transform: translate(-46px, -35px) scaleX(1.1);
+  }
+  57% {
+    transform: translate(-70px, -37px) scaleX(1.1);
+  }
+  71% {
+    transform: translate(-94px, -32px) scaleX(1.07);
+  }
+  85% {
+    transform: translate(-111px, -22px) scaleX(1.05);
+  }
+  100% {
+    transform: translate(-125px, -9px) scaleX(1);
+  }
+}
+
+@keyframes animloader1 {
+  0% {
+    box-shadow: 0 -6px, -122.9px -8px;
+  }
+  25%, 75% {
+    box-shadow: 0 0px, -122.9px -8px;
+  }
+  100% {
+    box-shadow: 0 0px, -122.9px -16px;
+  }
+}
+
+@media (max-width: 1000px) {
+body {
+  margin: 0 auto !important;
+}
+}
+
+@media (max-width: 400px) {
+body {
+  margin: 0 auto !important;
+}
+.css-khmcr8 {
+  width: 100% !important;
+}
+}
+
+.css-hltdia {
+  max-width: 444px;
+  display: flex !important;
+  justify-content: center !important;
+}
